@@ -106,3 +106,14 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+TW_INCLUDE_CRYPTO := true # Add加密功能
+TW_INCLUDE_CRYPTO_FBE := true # Add FBE加密支持
+
+TW_INCLUDE_FBE := true # Add FBE支持
+BOARD_USES_METADATA_PARTITION := true # Add METADATA加密支持
+TW_INCLUDE_FBE_METADATA_DECRYPT := true # Add FBE_METADATA加密支持
+TW_CRYPTO_FS_TYPE := “ext4” # 分区类型
+TW_CRYPTO_REAL_BLKDEV := “/dev/block/platform/bootdevice/by-name/userdata” # data分区地址
+TW_CRYPTO_MNT_POINT := “/data” # 挂载到的地址
+TW_CRYPTO_FS_OPTIONS := “noatime,nosuid,nodev,noauto_da_alloc,discard,errors=panic” #挂载参数
