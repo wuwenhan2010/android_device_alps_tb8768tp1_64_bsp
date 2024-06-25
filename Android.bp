@@ -10,5 +10,7 @@ soong_namespace {
 
 cc_library {
     name: "liblp",
-    ...
+    srcs: ["liblp.cpp"], // 假设你有一个名为 liblp.cpp 的源文件
+    shared_libs: ["libcutils"], // 假设 liblp 依赖于 libcutils 库
+    // 其他可能的配置项，例如 include_dirs, cflags 等
 }
