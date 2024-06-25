@@ -49,4 +49,4 @@
 /odmdtbo                    emmc      /dev/block/platform/bootdevice/by-name/odmdtbo           flags=display=odmdtbo
 /dtbo                       emmc      /dev/block/platform/bootdevice/by-name/dtbo              flags=display=dtbo
 /vbmeta                     emmc      /dev/block/platform/bootdevice/by-name/vbmeta            flags=display=vbmeta
-/mnt/media_rw/SDCard        vfat      /dev/block/mmcblk1p1                                      flags=backup=1
+/mnt/media_rw/SDCard        vfat      /dev/block/mmcblk1p1                                     flags=backup=1
