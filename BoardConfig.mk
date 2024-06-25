@@ -117,3 +117,5 @@ TW_CRYPTO_FS_TYPE := “ext4” # 分区类型
 TW_CRYPTO_REAL_BLKDEV := “/dev/block/platform/bootdevice/by-name/userdata” # data分区地址
 TW_CRYPTO_MNT_POINT := “/data” # 挂载到的地址
 TW_CRYPTO_FS_OPTIONS := “noatime,nosuid,nodev,noauto_da_alloc,discard,errors=panic” #挂载参数
+
+TARGET_RECOVERY_DEVICE_DIRS := $(LOCAL_PATH)/recovery

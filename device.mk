@@ -8,3 +8,5 @@
 LOCAL_PATH := device/alps/tb8768tp1_64_bsp
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+LOCAL_STATIC_LIBRARIES += liblp
