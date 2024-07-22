@@ -9,7 +9,6 @@ vendor   /vendor     ext4    ro,barrier=1     wait,slotselect,avb=vbmeta,logical
 product  /product    ext4    ro,barrier=1     wait,slotselect,avb,logical,first_stage_mount
 
 # Static Partitions
-/super                      ext4      /dev/block/platform/bootdevice/by-name/super             flags=display=super
 /metadata                   ext4      /dev/block/platform/bootdevice/by-name/md_udc            flags=display=metadata
 /data                       ext4      /dev/block/platform/bootdevice/by-name/userdata          flags=display=data
 /mnt/vendor/protect_f       ext4      /dev/block/platform/bootdevice/by-name/protect1          flags=display=protect_f
@@ -48,4 +47,3 @@ product  /product    ext4    ro,barrier=1     wait,slotselect,avb,logical,first_
 /odmdtbo                    emmc      /dev/block/platform/bootdevice/by-name/odmdtbo           flags=display=odmdtbo
 /dtbo                       emmc      /dev/block/platform/bootdevice/by-name/dtbo              flags=display=dtbo
 /vbmeta                     emmc      /dev/block/platform/bootdevice/by-name/vbmeta            flags=display=vbmeta
-/mnt/media_rw/SDCard        vfat      /dev/block/mmcblk1p1                                     flags=backup=1
