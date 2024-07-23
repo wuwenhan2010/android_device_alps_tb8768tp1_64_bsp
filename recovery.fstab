@@ -11,10 +11,10 @@ product  /product    ext4    ro,barrier=1     wait,slotselect,avb,logical,first_
 # Static Partitions
 /metadata                   ext4      /dev/block/platform/bootdevice/by-name/md_udc            flags=display=metadata
 /data                       ext4      /dev/block/platform/bootdevice/by-name/userdata          flags=display=data
-/vendor/protect_f           ext4      /dev/block/platform/bootdevice/by-name/protect1          flags=display=protect_f
-/vendor/protect_s           ext4      /dev/block/platform/bootdevice/by-name/protect2          flags=display=protect_s
-/vendor/nvdata              ext4      /dev/block/platform/bootdevice/by-name/nvdata            flags=display=nvdata
-/vendor/nvcfg               ext4      /dev/block/platform/bootdevice/by-name/nvcfg             flags=display=nvcfg
+/protect_f                  ext4      /dev/block/platform/bootdevice/by-name/protect1          flags=display=protect_f
+/protect_s                  ext4      /dev/block/platform/bootdevice/by-name/protect2          flags=display=protect_s
+/nvdata                     ext4      /dev/block/platform/bootdevice/by-name/nvdata            flags=display=nvdata
+/nvcfg                      ext4      /dev/block/platform/bootdevice/by-name/nvcfg             flags=display=nvcfg
 /auto                       auto      /devices/platform/externdevice*                          flags=display=auto
 /auto                       vfat      /devices/platform/mt_usb*                                flags=display=auto
 /persistent                 emmc      /dev/block/platform/bootdevice/by-name/frp               flags=display=persistent
